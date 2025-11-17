@@ -62,16 +62,32 @@
     function render() {
       const g = document.getElementById('grid');
       g.innerHTML = state.filtered.map(item => `
-        <article class="card" onclick="openPlayer(${encodeURIComponent(JSON.stringify(item))})" role="button" tabindex="0">
+        <article class="card" data-id="${item.id}" role="button" tabindex="0">
           <img class="thumb" loading="lazy" src="${item.thumb}" alt="">
           <div class="meta">
             <h3 class="title">${escapeHtml(item.title)}</h3>
-            <div class="tags">${(item.tags||[]).map(t=>`#${escapeHtml(t)}`).join(' ')}</div>
+            <div class="tags">${(item.tags || []).map(t => `#${escapeHtml(t)}`).join(" ")}</div>
           </div>
         </article>
-      `).join('');
+      `).join("");
+      
+      // hook up click/keyboard for each card
+      g.querySelectorAll(".card").forEach(card => {
+        const handle = () => {
+          const id = card.dataset.id;
+          const item = state.items.find(v => v.id === id);
+          if (item) openPlayer(item);
+        };
+        card.addEventListener("click", handle);
+        card.addEventListener("keydown", e => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            handle();
+          }
+        });
+      });
     }
-
+    
     function escapeHtml(s){ return (s||'').replace(/[&<>"']/g,m=>({ '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;' }[m])); }
 
     function openPlayer(item) {
