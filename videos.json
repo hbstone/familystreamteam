@@ -3,7 +3,7 @@
   "title": "Washer Demo",
   "description": "Samuel demonstrates the washer.",
   "tags": ["laundry", "washer", "demonstration", "demo"],
-  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/691b7810eee8975bcee4d8b5/thumbnail-1-0.png?v=1763408278919&w=320",
+  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/691b7810eee8975bcee4d8b5/thumbnail-1-0.png",
   "embed": "https://play.gumlet.io/embed/691b7810eee8975bcee4d8b5", 
   "date": "2025-10-03"
 }, {
@@ -11,7 +11,23 @@
   "title": "Simon Tour",
   "description": "Samuel gives a tour of his Simon games.",
   "tags": ["simon", "game", "demonstration", "demo"],
-  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/6a512cbed3e47137a3e9abe1/thumbnail-1-0.png?v=1783705027250&w-320",
+  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/6a512cbed3e47137a3e9abe1/thumbnail-1-0.png",
   "embed": "https://play.gumlet.io/embed/6a512cbed3e47137a3e9abe1", 
   "date": "2026-07-10"
+}, {
+  "id": "6ad2a791c56c0515aca9d1b2",
+  "title": "Roomba 960 Part 1",
+  "description": "Samuel introduces our new robot vacuum. Part 1 of 2.",
+  "tags": ["simon", "roomba", "robot", "vacuum", "robot vacuum", "demonstration", "demo"],
+  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/6ad2a791c56c0515aca9d1b2/thumbnail-1-0.png",
+  "embed": "https://play.gumlet.io/embed/6ad2a791c56c0515aca9d1b2", 
+  "date": "2026-10-15"
+}, {
+  "id": "6ad2a791c56c0515aca9d1b2",
+  "title": "Roomba 960 Part 2",
+  "description": "Samuel introduces our new robot vacuum. Part 2 of 2.",
+  "tags": ["simon", "roomba", "robot", "vacuum", "robot vacuum", "demonstration", "demo"],
+  "thumb": "https://video.gumlet.io/6907b76ba73e1769029862c7/6ad2a791c56c0515aca9d1b2/thumbnail-1-0.png",
+  "embed": "https://play.gumlet.io/embed/6ad2a791c56c0515aca9d1b2", 
+  "date": "2026-10-15"
 }]
